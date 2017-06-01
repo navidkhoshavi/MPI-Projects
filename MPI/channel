@@ -1,0 +1,26 @@
+program sqr;
+var
+ a:channel of integer;
+ i,k:integer;
+procedure p1(m:integer);
+ begin
+  a:=m;
+ end;
+procedure p2;
+var
+h:integer;
+   begin
+  h:=a;
+  h:=sqr(h);
+writeln(h);
+end;
+begin
+ for k:=1 to 5 do
+ begin
+  writeln('enter data:');
+  read(i);
+
+p1(i);
+p2;
+end;
+end.

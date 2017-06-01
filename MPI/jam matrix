@@ -1,0 +1,23 @@
+program jammatrix;
+var
+ a,b,c:array[1..3,1..3] of integer;
+ i,j:integer;
+begin
+ writeln('enter matris a:');
+  for i:=1 to 3 do
+   for j:=1 to 3 do
+     readln(a[i,j]);
+ writeln('enter matris b:');
+  for i:=1 to 3 do
+   for j:=1 to 3 do
+     readln(b[i,j]);
+ forall i:=1 to 3 do
+  forall j:=1 to 3 do
+   c[i,j]:=a[i,j]+b[i,j];
+ for i:=1 to 3 do
+  begin
+   writeln;
+   for j:=1 to 3 do
+   write(c[i,j]);
+  end;
+end.
